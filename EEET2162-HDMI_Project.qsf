@@ -48,3 +48,5 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name VERILOG_FILE "EEET2162-HDMI_Project.v"
+set_global_assignment -name VERILOG_FILE addressDecoder.v
+set_global_assignment -name VERILOG_FILE dtype.v
