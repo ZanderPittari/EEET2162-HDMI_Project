@@ -1,0 +1,431 @@
+$comment
+	File created using the following command:
+		vcd file counter255.msim.vcd -direction
+$end
+$date
+	Tue Apr 26 20:53:30 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module counter255_vlg_vec_tst $end
+$var reg 8 ! Din [7:0] $end
+$var reg 1 " clock $end
+$var reg 1 # countEn $end
+$var reg 1 $ preloadEn $end
+$var wire 1 % countDone $end
+$var wire 1 & currentCount [7] $end
+$var wire 1 ' currentCount [6] $end
+$var wire 1 ( currentCount [5] $end
+$var wire 1 ) currentCount [4] $end
+$var wire 1 * currentCount [3] $end
+$var wire 1 + currentCount [2] $end
+$var wire 1 , currentCount [1] $end
+$var wire 1 - currentCount [0] $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 countDone~output_o $end
+$var wire 1 5 currentCount[0]~output_o $end
+$var wire 1 6 currentCount[1]~output_o $end
+$var wire 1 7 currentCount[2]~output_o $end
+$var wire 1 8 currentCount[3]~output_o $end
+$var wire 1 9 currentCount[4]~output_o $end
+$var wire 1 : currentCount[5]~output_o $end
+$var wire 1 ; currentCount[6]~output_o $end
+$var wire 1 < currentCount[7]~output_o $end
+$var wire 1 = clock~input_o $end
+$var wire 1 > Add0~21_sumout $end
+$var wire 1 ? Din[0]~input_o $end
+$var wire 1 @ Add0~2 $end
+$var wire 1 A Add0~5_sumout $end
+$var wire 1 B Din[6]~input_o $end
+$var wire 1 C preloadEn~input_o $end
+$var wire 1 D countEn~input_o $end
+$var wire 1 E counterValue[2]~1_combout $end
+$var wire 1 F Add0~6 $end
+$var wire 1 G Add0~9_sumout $end
+$var wire 1 H Din[7]~input_o $end
+$var wire 1 I WideAnd0~0_combout $end
+$var wire 1 J counterValue[2]~0_combout $end
+$var wire 1 K Add0~22 $end
+$var wire 1 L Add0~17_sumout $end
+$var wire 1 M Din[1]~input_o $end
+$var wire 1 N Add0~18 $end
+$var wire 1 O Add0~13_sumout $end
+$var wire 1 P Din[2]~input_o $end
+$var wire 1 Q Add0~14 $end
+$var wire 1 R Add0~25_sumout $end
+$var wire 1 S Din[3]~input_o $end
+$var wire 1 T Add0~26 $end
+$var wire 1 U Add0~29_sumout $end
+$var wire 1 V Din[4]~input_o $end
+$var wire 1 W Add0~30 $end
+$var wire 1 X Add0~1_sumout $end
+$var wire 1 Y Din[5]~input_o $end
+$var wire 1 Z WideAnd0~combout $end
+$var wire 1 [ counterValue [7] $end
+$var wire 1 \ counterValue [6] $end
+$var wire 1 ] counterValue [5] $end
+$var wire 1 ^ counterValue [4] $end
+$var wire 1 _ counterValue [3] $end
+$var wire 1 ` counterValue [2] $end
+$var wire 1 a counterValue [1] $end
+$var wire 1 b counterValue [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111011 !
+0"
+1#
+0$
+0%
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0.
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+1>
+1?
+0@
+0A
+1B
+0C
+1D
+1E
+0F
+0G
+1H
+0I
+0J
+0K
+0L
+1M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+1V
+0W
+0X
+1Y
+0Z
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+$end
+#50000
+1"
+1=
+1b
+15
+1K
+1-
+0>
+1L
+#100000
+0"
+0=
+#150000
+1"
+1=
+1a
+0b
+05
+16
+0K
+1N
+1,
+0-
+1>
+0L
+0N
+1L
+1O
+0O
+#200000
+0"
+0=
+#230000
+1$
+1C
+#250000
+1"
+1=
+1]
+1^
+1_
+1b
+1[
+1\
+1;
+1<
+15
+18
+19
+1:
+1K
+1(
+1)
+1*
+1-
+1&
+1'
+1A
+1G
+0>
+1R
+1U
+1X
+1N
+0L
+1O
+#290000
+0$
+0C
+#300000
+0"
+0=
+#350000
+1"
+1=
+1`
+0a
+0b
+05
+06
+17
+0K
+0N
+1Q
+1+
+0,
+0-
+1>
+1L
+0O
+0Q
+1T
+0L
+1O
+0R
+0T
+1W
+1R
+0U
+0W
+1@
+1U
+0X
+0@
+1F
+1X
+0A
+0F
+1A
+0G
+1G
+#400000
+0"
+0=
+#450000
+1"
+1=
+1b
+15
+1K
+1-
+0>
+1L
+#500000
+0"
+0=
+#550000
+1"
+1=
+1a
+0b
+05
+16
+0K
+1N
+1,
+0-
+1>
+0L
+0N
+1Q
+1L
+0O
+0Q
+1T
+1O
+0R
+0T
+1W
+1R
+0U
+0W
+1@
+1U
+0X
+0@
+1F
+1X
+0A
+0F
+1A
+0G
+1G
+#600000
+0"
+0=
+#650000
+1"
+1=
+1b
+15
+1I
+1K
+1-
+0>
+1N
+1J
+0L
+1Z
+14
+1Q
+1%
+0O
+1T
+0R
+1W
+0U
+1@
+0X
+1F
+0A
+0G
+#700000
+0"
+0=
+#710000
+0#
+0D
+0E
+#750000
+1"
+1=
+#790000
+1#
+1D
+1E
+#800000
+0"
+0=
+#850000
+1"
+1=
+0]
+0^
+0_
+0`
+0a
+0b
+0[
+0\
+0;
+0<
+05
+06
+07
+08
+09
+0:
+0J
+0F
+0I
+0K
+0N
+0Q
+0T
+0W
+0@
+0(
+0)
+0*
+0+
+0,
+0-
+0&
+0'
+0Z
+1A
+1G
+1>
+1L
+1O
+1R
+1U
+1X
+04
+0%
+0G
+0L
+0O
+0R
+0U
+0X
+0A
+#900000
+0"
+0=
+#950000
+1"
+1=
+1b
+15
+1K
+1-
+0>
+1L
+#1000000

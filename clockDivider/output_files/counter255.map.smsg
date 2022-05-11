@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at counter255.v(15): always construct contains both blocking and non-blocking assignments File: C:/AdvDigDes/Laboratory4/counter255.v Line: 15
