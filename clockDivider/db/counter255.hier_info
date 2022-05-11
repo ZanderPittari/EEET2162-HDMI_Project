@@ -1,0 +1,44 @@
+|counter255
+clock => counterValue[0].CLK
+clock => counterValue[1].CLK
+clock => counterValue[2].CLK
+clock => counterValue[3].CLK
+clock => counterValue[4].CLK
+clock => counterValue[5].CLK
+clock => counterValue[6].CLK
+clock => counterValue[7].CLK
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+countEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+preloadEn => counterValue.OUTPUTSELECT
+Din[0] => counterValue.DATAB
+Din[1] => counterValue.DATAB
+Din[2] => counterValue.DATAB
+Din[3] => counterValue.DATAB
+Din[4] => counterValue.DATAB
+Din[5] => counterValue.DATAB
+Din[6] => counterValue.DATAB
+Din[7] => counterValue.DATAB
+countDone <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
+currentCount[0] <= counterValue[0].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[1] <= counterValue[1].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[2] <= counterValue[2].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[3] <= counterValue[3].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[4] <= counterValue[4].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[5] <= counterValue[5].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[6] <= counterValue[6].DB_MAX_OUTPUT_PORT_TYPE
+currentCount[7] <= counterValue[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

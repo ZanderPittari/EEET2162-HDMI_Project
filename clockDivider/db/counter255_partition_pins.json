@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "countDone",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[4]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[5]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[6]",
+					"strict" : false
+				},
+				{
+					"name" : "currentCount[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "Din[5]",
+					"strict" : false
+				},
+				{
+					"name" : "preloadEn",
+					"strict" : false
+				},
+				{
+					"name" : "countEn",
+					"strict" : false
+				},
+				{
+					"name" : "Din[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Din[4]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
