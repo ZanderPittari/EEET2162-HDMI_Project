@@ -1,0 +1,42 @@
+QUESTIONS: 
+
+
+ - do we need interlaced or noninterlaced video standard?
+
+ 
+ INFO:
+ Display Resolution 		Pixel Clock (MHz) 
+ 720 x 480 @ 60Hz 		27
+ 
+ Front Porch 	Sync Width 	Back Porch 	Active Pixels 	Total Pixels 
+ 16 				62 			60 			720 				858 
+ 
+ Front Porch 	Sync Width 	Back Porch 	Active Pixels 	Total Pixels
+ 9 				6 				30				480 				525
+ 
+ ===================================================================
+ 
+A 1024 x 600 resolution display requires 614400 memory locations, with each location having a number of possible colors. 
+The number of bits needed to describe the available colors is called bits per pixel (bpp). 
+24 bits can describe 16777216 colors (known as true color). 
+A panel with 614400 24-bit locations requires a 1800 KB frame buffer.
+
+The LCD controller paints frames from left to right and from top to bottom. Signals used on a typical LCD display include:
+
+HSYNC: Horizontal synch (FPLINE) indicates the end of a line and the beginning of the next line.
+VSYNC: Vertical synch (FPFRAME) indicates the end of the current frame. The next line index should restart at zero in the upper-left corner.
+DE: Data enable. The data in the bus is valid and must be latched using the PIXCLK signal. While it’s active, each pulse draws a pixel.
+PIXCLK: Specifies the placing of RGB data on the bus.
+RGB data: Red, green, and blue pixel data. Usually 24 data lines for RGB888.
+
+===================================================================
+Typical timing parameters include:
+
+Horizontal Back Porch (HBP): Number of PIXCLK pulses between HSYNC signal and the first valid pixel data.
+Horizontal Front porch (HFP): Number of PIXCLK pulses between the last valid pixel data in the line and the next HSYNC pulse.
+Vertical Back Porch (VBP): Number of lines (HSYNC pulses) from a VSYNC signal to the first valid line.
+Vertical Front Porch (VFP): Number of lines (HSYNC pulses) between the last valid line of the frame and the next VSYNC pulse.
+VSYNC length: Number of HSYNC pulses when a VSYNC signal is active.
+HSYNC length: Number of PIXCLK pulses when a HSYNC signal is active.
+Active frame width (hactive): Horizontal resolution.
+Active frame height (vactive): Vertical resolution.

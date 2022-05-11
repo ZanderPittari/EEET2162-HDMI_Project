@@ -1,0 +1,34 @@
+//example module for the generated video sync adv7511
+module sync_vg
+#(
+ parameter X_BITS=12,
+ Y_BITS=12
+)
+(
+ input wire clk,
+ input wire reset,
+ input wire interlaced,
+ input wire [Y_BITS-1:0] v_total_0,
+ input wire [Y_BITS-1:0] v_fp_0,
+ input wire [Y_BITS-1:0] v_bp_0,
+ input wire [Y_BITS-1:0] v_sync_0,
+ input wire [Y_BITS-1:0] v_total_1,
+ input wire [Y_BITS-1:0] v_fp_1,
+ input wire [Y_BITS-1:0] v_bp_1,
+ input wire [Y_BITS-1:0] v_sync_1,
+ input wire [X_BITS-1:0] h_total,
+ input wire [X_BITS-1:0] h_fp,
+ input wire [X_BITS-1:0] h_bp,
+ input wire [X_BITS-1:0] h_sync,
+ input wire [X_BITS-1:0] hv_offset_0,
+ input wire [X_BITS-1:0] hv_offset_1,
+ output reg vs_out,
+ output reg hs_out,
+ output reg de_out,
+ output reg [Y_BITS:0] v_count_out,
+ output reg [X_BITS-1:0] h_count_out,
+ output reg [X_BITS-1:0] x_out,
+ output reg [Y_BITS:0] y_out,
+ output reg field_out,
+ output wire clk_out
+);
